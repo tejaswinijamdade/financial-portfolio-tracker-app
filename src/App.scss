@@ -1,0 +1,268 @@
+*,
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+$desktop: 425px;
+@mixin desktop {
+  @media (max-width : #{$desktop}) {
+    @content;
+  }
+}
+
+$p-color: #5685f0;
+$s-color: #3f64c7;
+$t-color: #2e4275;
+$d-color: #ed4e4e;
+$g-color: #c6d0da;
+$p2-color: #4eeda1;
+
+$h1: 32px;
+$h2: 24px;
+$h3: 18px;
+$h4: 16px;
+
+.head {
+  width: 100%;
+  text-align: center;
+  background-color: $p-color;
+  color: $t-color;
+  padding: 12px;
+  font-size: $h2;
+  @include desktop() {
+    font-size: $h3;
+  }
+}
+
+// .tableSection {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: center;
+
+//   .MyStocks {
+//
+//   }
+//   table {
+
+//     @include desktop() {
+//       width: 100%;
+//       font-size: 16px;
+//     }
+//     th {
+//     }
+//     td {
+//     }
+//     td,
+//     th {
+
+//     }
+//     tr:nth-child(even) {
+//       background-color: rgb(213, 218, 228);
+//     }
+//     .StopTrackingBtn {
+
+//     }
+//   }
+// }
+.tableSection {
+  @include desktop() {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .MyStocks {
+    font-size: $h2;
+    padding: 10px;
+    color: $t-color;
+    margin-top: 25px;
+    text-align: center;
+    @include desktop() {
+      font-size: $h3;
+      padding: 10px;
+    }
+  }
+  table {
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+    border-collapse: collapse;
+    @include desktop() {
+      border-collapse: collapse;
+    }
+    th {
+      padding: 15px;
+      background-color: $p-color;
+      color: $p2-color;
+      border: 1px solid rgb(170, 169, 169);
+      @include desktop() {
+        background-color: $p-color;
+        padding: 5px;
+        color: $p2-color;
+        border: 1px solid rgb(170, 169, 169);
+      }
+    }
+    td {
+      padding: 10px;
+      border: 1px solid rgb(170, 169, 169);
+      @include desktop() {
+        padding: 5px;
+        font-size: 14px;
+        border: 1px solid rgb(170, 169, 169);
+      }
+    }
+    .StopTrackingBtn {
+      height: 40px;
+      width: 150px;
+      background-color: #f65d5d;
+      color: #162736;
+      font-size: $h4;
+      border-radius: 5px;
+      box-shadow: none;
+      align-self: center;
+      justify-self: center;
+      @include desktop() {
+        font-size: 10px;
+        width: 60px;
+        height: 30px;
+        background-color: $d-color;
+        color: White;
+      }
+    }
+  }
+}
+ul li {
+  list-style-type: none;
+}
+.AddStocksTitle {
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $g-color;
+  padding: 0px;
+  @include desktop() {
+    display: block;
+  }
+
+  .add {
+    font-size: $h2;
+    padding: 20px;
+    color: $t-color;
+    text-align: center;
+    @include desktop() {
+      font-size: $h3;
+    }
+  }
+  ul {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    @include desktop() {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    li {
+      width: 50%;
+      padding: 15px;
+      display: flex;
+      flex-direction: row;
+      @include desktop() {
+        width: 100%;
+        display: block;
+      }
+      span {
+        font-size: $h2;
+        padding: 15px;
+        font-style: bold;
+        @include desktop() {
+          font-size: 14px;
+          padding: 5px;
+        }
+      }
+      .StockButton {
+        height: 40px;
+        width: 150px;
+        background-color: $t-color;
+        color: $p2-color;
+        font-size: $h3;
+        border-radius: 5px;
+        box-shadow: none;
+
+        @include desktop() {
+          font-size: 14px;
+          width: 100px;
+          height: 35px;
+          background-color: $t-color;
+          color: White;
+        }
+      }
+    }
+  }
+}
+
+.AddStockForm {
+  width: 50%;
+  margin: 0 auto;
+  @include desktop() {
+    width: 100%;
+  }
+}
+.formHead {
+  font-size: $h1;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 55px;
+  @include desktop() {
+    width: 100%;
+    font-size: $h2;
+  }
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .formEle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: $h2;
+    padding: 15px;
+    @include desktop() {
+      font-size: $h3;
+    }
+  }
+  input {
+    width: 200px;
+    height: 35px;
+    padding: 10px;
+    @include desktop() {
+      width: 120px;
+      height: 30px;
+      font-size: 10px;
+    }
+  }
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  .AddButton {
+    height: 40px;
+    width: 150px;
+    background-color: $t-color;
+    color: $p2-color;
+    font-size: $h3;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+}

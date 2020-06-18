@@ -1,0 +1,333 @@
+*,
+body {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.head {
+  width: 100%;
+  text-align: center;
+  background-color: #5685f0;
+  color: #2e4275;
+  padding: 12px;
+  font-size: 24px;
+}
+
+@media (max-width: 425px) {
+  .head {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .tableSection {
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 14px;
+  }
+}
+
+.tableSection .MyStocks {
+  font-size: 24px;
+  padding: 10px;
+  color: #2e4275;
+  margin-top: 25px;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .tableSection .MyStocks {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+.tableSection table {
+  margin: 0 auto;
+  width: 75%;
+  height: auto;
+  border-collapse: collapse;
+}
+
+@media (max-width: 425px) {
+  .tableSection table {
+    border-collapse: collapse;
+  }
+}
+
+.tableSection table th {
+  padding: 15px;
+  background-color: #5685f0;
+  color: #4eeda1;
+  border: 1px solid #aaa9a9;
+}
+
+@media (max-width: 425px) {
+  .tableSection table th {
+    background-color: #5685f0;
+    padding: 5px;
+    color: #4eeda1;
+    border: 1px solid #aaa9a9;
+  }
+}
+
+.tableSection table td {
+  padding: 10px;
+  border: 1px solid #aaa9a9;
+}
+
+@media (max-width: 425px) {
+  .tableSection table td {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #aaa9a9;
+  }
+}
+
+.tableSection table .StopTrackingBtn {
+  height: 40px;
+  width: 150px;
+  background-color: #f65d5d;
+  color: #162736;
+  font-size: 16px;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media (max-width: 425px) {
+  .tableSection table .StopTrackingBtn {
+    font-size: 10px;
+    width: 60px;
+    height: 30px;
+    background-color: #ed4e4e;
+    color: White;
+  }
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.AddStocksTitle {
+  margin-top: 45px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #c6d0da;
+  padding: 0px;
+}
+
+@media (max-width: 425px) {
+  .AddStocksTitle {
+    display: block;
+  }
+}
+
+.AddStocksTitle .add {
+  font-size: 24px;
+  padding: 20px;
+  color: #2e4275;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .AddStocksTitle .add {
+    font-size: 18px;
+  }
+}
+
+.AddStocksTitle ul {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+@media (max-width: 425px) {
+  .AddStocksTitle ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.AddStocksTitle ul li {
+  width: 50%;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 425px) {
+  .AddStocksTitle ul li {
+    width: 100%;
+    display: block;
+  }
+}
+
+.AddStocksTitle ul li span {
+  font-size: 24px;
+  padding: 15px;
+  font-style: bold;
+}
+
+@media (max-width: 425px) {
+  .AddStocksTitle ul li span {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+.AddStocksTitle ul li .StockButton {
+  height: 40px;
+  width: 150px;
+  background-color: #2e4275;
+  color: #4eeda1;
+  font-size: 18px;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (max-width: 425px) {
+  .AddStocksTitle ul li .StockButton {
+    font-size: 14px;
+    width: 100px;
+    height: 35px;
+    background-color: #2e4275;
+    color: White;
+  }
+}
+
+.AddStockForm {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 425px) {
+  .AddStockForm {
+    width: 100%;
+  }
+}
+
+.formHead {
+  font-size: 32px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+@media (max-width: 425px) {
+  .formHead {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formContainer .formEle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 24px;
+  padding: 15px;
+}
+
+@media (max-width: 425px) {
+  .formContainer .formEle {
+    font-size: 18px;
+  }
+}
+
+.formContainer input {
+  width: 200px;
+  height: 35px;
+  padding: 10px;
+}
+
+@media (max-width: 425px) {
+  .formContainer input {
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn .AddButton {
+  height: 40px;
+  width: 150px;
+  background-color: #2e4275;
+  color: #4eeda1;
+  font-size: 18px;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=App.css.map */
